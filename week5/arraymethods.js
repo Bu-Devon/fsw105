@@ -9,17 +9,24 @@ function arrayChange(){
     console.log ("fruit", fruit);
 
       var indexOfOrange = fruit.indexOf("orange");
-    console.log ("index of orange is:" + indexOfOrange)
+    console.log ("index of orange is:" + indexOfOrange);
 
-    fruit.push(indexOfOrange) 
+    fruit.push(indexOfOrange); 
     console.log ("fruit", fruit);
 
     vegtables.push(vegtables.length);
     console.log ( "vegtables", vegtables);
    
-   var food = new Array (fruit.join(vegtables));
-   
-     console.log (food)
+   var food = new Array (fruit.concat(vegtables));
+   console.log (food)
+    
+    var removed = food.splice (4, 5);
+    console.log (removed)
 
+   var flat = food.shift();
+   console.log (flat)
+
+  var revr = food.reverse();
+     console.log  (revr)
 }
 console.log (arrayChange());
