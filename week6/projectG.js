@@ -11,7 +11,7 @@ while (alive == true){
     const menuOptions = readlineSync.keyIn ("Enter 1 to Put hand in hole \n Enter 2 to find the key \n Enter 3 to Open the door", {limit: '$<1-3>'});
     console.log(menuOptions);
     if (menuOptions == 1){
-        console.log ( `${playerName}, oops, you are dead. Game over.`);
+        console.log ( `${playerName}, Fills Bad, you are dead. Game over.`);
         alive = false;
     }
     else if (menuOptions == 2 && hasKey == false){
@@ -25,7 +25,7 @@ while (alive == true){
       console.log (`${playerName}, YOU NEED TO FIND THE KEY?`);
     }
     else if (menuOptions == 3 && hasKey == true){
-        console.log (`${playerName}, You Opened The Door And Escaped The Game Room. Congratulations`);
+        console.log (`${playerName}, You Escaped The Game Room. Congratulations you WIN`);
         alive = false
     }
 
